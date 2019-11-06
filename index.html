@@ -1,0 +1,651 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>LASTIG - Guillaume Touya - Homepage</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/css/bootstrap-select.min.css">
+
+  <!-- Custom styles for this template -->
+  <link href="css/animate.css" rel="stylesheet">
+  <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+  <link href="css/resume.css" rel="stylesheet">
+
+  <!-- scripts on load -->
+  <script src="vendor/d3/d3.min.js"></script>
+  <script src="js/reviewing.js" charset="utf-8"></script>
+  <script src="js/hal.js" charset="utf-8"></script>
+
+</head>
+
+<body id="page-top" onload="reviewingVis('reviewing.json'); getJournalPublicationsAuthor('guillaume-touya');getConfPublicationsAuthor('guillaume-touya');getBookPublicationsAuthor('guillaume-touya');getWorkshopPublicationsAuthor('guillaume-touya');getOtherPublicationsAuthor('guillaume-touya');getInvitedTalksAuthor('guillaume-touya');">
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <select class="selectpicker" data-width="fit">
+      <option data-content='<span class="flag-icon flag-icon-us"></span> English'>English</option>
+      <option  data-content='<span class="flag-icon flag-icon-fr"></span> Français'>Français</option>
+    </select>
+    <a class="nav-link text-muted subheading lang-en" href="https://umrlastig.github.io/geovis">Team</a>
+    <a class="nav-link text-muted subheading lang-fr" href="https://umrlastig.github.io/geovis">Equipe</a>
+    <a class="navbar-brand js-scroll-trigger" href="#page-top">
+      <span class="d-block d-lg-none">Guillaume Touya</span>
+      <span class="d-none d-lg-block">
+        <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/touya.png" alt="">
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#about">About</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#about">Présentation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#interest">Research Interests</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#interest">Sujets de recherche</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#news">News</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#news">Actualités</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#experience">Experience</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#experience">Parcours professionnel</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#education">Education</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#education">Formation</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#publications">Publications</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#projects">Projects</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#projects">Projets</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link js-scroll-trigger lang-en" href="#other">Other research activities</a>
+          <a class="nav-link js-scroll-trigger lang-fr" href="#other">Autres activités de recherche</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container-fluid p-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="about">
+      <div class="w-100">
+        <h1 class="mb-0">Guillaume
+          <span class="text-primary">Touya</span>
+        </h1>
+        <div class="subheading mb-5">73 avenue de Paris · 94165 Saint-Mandé CEDEX · (+33)1 43 98 62 37 ·
+          <a>guil<!--anti@spam.fr!-->laume.touya@ign.fr</a>
+        </div>
+        <p class="lead mb-5 lang-en">Senior researcher in GI Science, geovisualization, and map generalization. Vice-head of LASTIG lab.</p>
+        <p class="lead mb-5 lang-en">Member of the <a href="">GEOVIS</a> research team</p>
+        <p class="lead mb-5 lang-fr">Directeur de recherche IGN en sciences de l'information géographique, géovisualisation, et généralisation cartographique. Directeur adjoint du LASTIG.</p>
+        <p class="lead mb-5 lang-fr">Membre de l'équipe <a href="">GEOVIS</a></p>
+        <div class="social-icons">
+          <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="https://www.researchgate.net/profile/Guillaume_Touya">
+            <i class="fab fa-researchgate"></i>
+          </a>
+          <a href="https://github.com/gtouya">
+            <i class="fab fa-github"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://scholar.google.fr/citations?user=Cbc_R2IAAAAJ">
+            <i class="fab fa-google"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="interest">
+      <div class="w-100">
+        <h2 class="mb-5 lang-en">Research Interests</h2>
+        <h2 class="mb-5 lang-fr">Sujets de recherche</h2>
+        <hr class="star-dark mb-5">
+        <div class="row">
+          <article class="col-md-6 col-lg-4">
+								<div class="portfolio-item d-block mx-auto">
+									<img class="img-fluid" src="img/generalisation.png" alt="" />
+									<div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+										<div class="folio-info my-auto w-100 text-center">
+											<a href="" class="fancybox"><i class="fas fa-search-plus fa-3x"></i></a>
+										</div>
+									</div>
+								</div>
+          </article>
+          <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/agents.png" alt="" />
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <a href="" class="fancybox"><i class="fas fa-search-plus fa-3x"></i></a>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <article class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/vgi.png" alt="" />
+                  <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+                    <div class="folio-info my-auto w-100 text-center">
+                      <h5 class="lang-en">Volunteered Geographic Information</h5>
+                      <h5 class="lang-fr">Information géographique volontaire</h5>
+                    </div>
+                  </div>
+                </div>
+          </article>
+          <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/zoom.png" alt="" />
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <h5 class="lang-en">Interactions in multi-scale maps</h5>
+                      <h5 class="lang-fr">Interactions dans les cartes multi-échelles</h5>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          <article class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/lod.png" alt="" />
+                  <div class="portfolio-desc d-flex align-center position-absolute h-100 w-100">
+                    <div class="folio-info my-auto w-100 text-center">
+                      <h5 class="lang-en">Scale and LOD issues in geovisualization</h5>
+                      <h5 class="lang-fr">échelle et niveau de détail en géovisualisation</h5>
+                    </div>
+                  </div>
+                </div>
+          </article>
+          <div class="col-md-6 col-lg-4">
+                <div class="portfolio-item d-block mx-auto">
+                  <img class="img-fluid" src="img/auto_carto.png" alt="" />
+                  <div class="portfolio-desc align-center position-absolute h-100 w-100">
+                    <div class="folio-info w-100 text-center">
+                      <h5 class="lang-en">Automated cartography: text placement, schematization, conflation</h5>
+                      <h5 class="lang-fr">Cartographie automatique: placement de texte, schématisation, recalage géométrique</h5>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="news">
+      <div class="w-100">
+        <h2 class="mb-5">News</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/orthez_google.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>First news</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/orthez_IGN.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Second news</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/orthez_OSM.png" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Third news</h5>
+                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex justify-content-center" id="experience">
+      <div class="w-100">
+        <h2 class="mb-5">Experience</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Vice-head of LASTIG lab</h3>
+            <div class="subheading mb-3">LASTIG, IGN France</div>
+            <p>Description...</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2018 - Present</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Head of COGIT research team</h3>
+            <div class="subheading mb-3">LASTIG, IGN France</div>
+            <p>Description...</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">July 2017 - January 2019</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Senior researcher</h3>
+            <div class="subheading mb-3">COGIT, IGN France</div>
+            <p>Description...</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">June 2011 - July 2017</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">PhD student</h3>
+            <div class="subheading mb-3">COGIT, IGN France</div>
+            <p>Description...</p>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2008 - June 2011</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Research engineer</h3>
+            <div class="subheading mb-3">COGIT, IGN France</div>
+              <p>Description...</p>
+            </div>
+            <div class="resume-date text-md-right">
+              <span class="text-primary">September 2004 - December 2007</span>
+            </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section id="timeline" class="section appear clearfix">
+      <div class="container mar-bot50">
+        <div class="row mar-bot40">
+          <div class="col-lg-12 text-center">
+              <h2 class="section-heading">Experience</h2>
+              <h3 class="section-subheading text-muted mb-5">Past jobs and roles in research</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>10-09-2004</h4>
+                    <h4 class="subheading">Research assistant</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">I start working at IGN France as a research assistant in the COGIT research team, assisting Cécile Duchêne and Anne Ruas on map generalisation.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>01-01-2008</h4>
+                    <h4 class="subheading">PhD student</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">My PhD, <a href="http://recherche.ign.fr/labos/cogit/pdf/THESES/TOUYA/theseTouya.pdf">obtained in June 2011</a>, was supervised by Cécile Duchêne and Anne Ruas, and dealt with collaborative map generalisation.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>01-07-2011</h4>
+                    <h4 class="subheading">Senior researcher at COGIT research team, IGN</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">After my PhD, I become a senior researcher, still in COGIT team, at IGN France. I'm part of the group on automated cartography and geovisualization.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>04-05-2017</h4>
+                    <h4 class="subheading">Habilitation defense</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Defense of my <a href="http://recherche.ign.fr/labos/cogit/pdf/HDR/hdr-touya-2017.pdf">habilitation (HDR)</a> in GI science, which allows in France to be the main supervisor of PhD students.</p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>15-07-2017</h4>
+                    <h4 class="subheading">Head of COGIT research team</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">I take over the leadership if the COGIT research team from Sébastien Mustière.</a></p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="img-circle img-responsive" src="" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>01-09-2018</h4>
+                    <h4 class="subheading">Vice-head of LASTIG lab</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">I become the vice-head of the new <a href="http://umrlastig.github.io/website">LASTIG lab.</a></p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="education">
+      <div class="w-100">
+        <h2 class="mb-5">Education</h2>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">Université Paris-Est</h3>
+            <div class="subheading mb-3">Habilitation (HDR)</div>
+            <div>Geographical Information Science</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">May 2017</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Université Paris-Est</h3>
+            <div class="subheading mb-3">PhD in Geographical Information Science</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">January 2008 - June 2011</span>
+          </div>
+        </div>
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between mb-5">
+          <div class="resume-content">
+            <h3 class="mb-0">ENSG</h3>
+            <div class="subheading mb-3">Engineering school</div>
+            <div>Geographical Information Science</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2001 - September 2004</span>
+          </div>
+        </div>
+
+        <div class="resume-item d-flex flex-column flex-md-row justify-content-between">
+          <div class="resume-content">
+            <h3 class="mb-0">Université Paris-Est</h3>
+            <div class="subheading mb-3">Master in Geographical Information Science</div>
+          </div>
+          <div class="resume-date text-md-right">
+            <span class="text-primary">September 2003 - September 2004</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="publications">
+      <div class="w-100">
+        <h2 class="mb-5">Publications</h2>
+
+        <div class="subheading mb-3 mt-3">Journals</div>
+        <ol id="pubJ" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Conferences</div>
+        <ol id="pubC" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Books and Chapters</div>
+        <ol id="pubB" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Workshops and Posters</div>
+        <ol id="pubW" class="sub">
+        </ol>
+
+        <div class="subheading mb-3 mt-3">Other Publications (Technical Reports, Dissertations, Dissemination)</div>
+        <ol id="pubO" class="sub">
+        </ol>
+
+      </div>
+    </section>
+
+    <section class="section appear clearfix p-3 p-lg-5">
+      <div class="w-100">
+        <h2 class="mb-5 mt-5">Invited Talks</h2>
+        <ol id="talks" class="sub">
+        </ol>
+      </div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="projects">
+      <div class="container">
+        <div class="row text-center title">
+          <h2>Projects</h2>
+        </div>
+        <div class="subheading mb-3">On-going and past research projects</div>
+        <div class="row projects">
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/mapmuxing.png" alt="" class="icon">
+              </div>
+              <h4 class="heading">MapMuxing</h4>
+              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/activmap.png" alt="" class="icon">
+              </div>
+              <h4 class="heading">ACTIVmap</h4>
+              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/timemachine.jpg" alt="" class="icon">
+              </div>
+              <h4 class="heading">TimeMachine</h4>
+              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cut cut-bottom"></div>
+    </section>
+
+    <hr class="m-0">
+
+    <section class="resume-section p-3 p-lg-5 d-flex align-items-center" id="other">
+      <div class="w-100">
+        <h2 class="mb-5">Other research activities</h2>
+
+        <div class="subheading mb-3">Software development</div>
+
+        <div class="row projects">
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/cartagen_logo.png" alt="" class="icon">
+              </div>
+              <h4 class="heading">CartAGen</h4>
+              <a class="description" href="https://github.com/IGNF/CartAGen">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/Geoxygene-logo.png" alt="" class="icon">
+              </div>
+              <h4 class="heading">GeOxygene</h4>
+              <a class="description" href="https://github.com/IGNF/geoxygene">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="project">
+              <div class="icon-holder">
+                <img src="img/icons/logo_deepmapgen_small.png" alt="" class="icon">
+              </div>
+              <h4 class="heading">DeepMapGen</h4>
+              <p class="description">A elementum ligula lacus ac quam ultrices a scelerisque praesent vel suspendisse scelerisque a aenean hac montes.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subheading mb-3 mt-3">Teaching</div>
+
+        <div class="subheading mb-3 mt-3">Other research activities</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            <a href="https://generalisation.icaci.org/">Chair of the ICA commission on Map Generalisation and Multiple Representation</a> since Jul. 2017</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            <a href="http://apvgi-magis.ign.fr/">Co-chair of the GDR MAGIS CNRS commission on crowdsourcing and VGI</a> since Jan. 2017</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Member of the scientific committee of the SAGEO conference series since 2017</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Regular reviewer of most important journals in GI science (IJGIS, CaGIS, JOSIS, IJC...)</li>
+        </ul>
+
+        <div class="subheading mb-3 mt-3">Supervisions</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-check-square"></i>
+            Adrien Maudet (PhD, 2016), co-supervised with Cécile Duchêne (LASTIG) and Sébastien Picault (CRISTAL, Lille)</li>
+          <li>
+            <i class="fa-li fa fa-check-square"></i>
+            Marion Dumont (PhD, 2018), co-supervised with Cécile Duchêne (LASTIG)</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Quy Thy Truong (PhD), co-supervised with Cyril de Runz (CReSTIC, Reims)</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Sébastien Biniek (PhD), co-supervised with Gilles Rouffineau (ESAD Valence)</li>
+          <li>
+            <i class="fa-li fa fa-square"></i>
+            Gauthier Filières-Riveau (PhD), co-supervised with Jean-Marie Favreau and Vincent Barra (LIMOS, Clermont-Ferrand)</li>
+        </ul>
+
+        <div class="subheading mb-3 mt-3">Reviewing</div>
+        <div id="reviewings" class="sub">
+            <div id="revj">
+            </div>
+            <div id="revc">
+            </div>
+            <div id="revb">
+            </div>
+        </div>
+
+        <div class="subheading mb-3">Awards</div>
+        <ul class="fa-ul mb-0">
+          <li>
+            <i class="fa-li fa fa-trophy text-warning"></i>
+            2018 Henry Johns Award for the most outstanding paper published in 2017 in the Cartographic Journal</li>
+        </ul>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+  <script src="vendor/jquery.isotope.min.js"></script>
+  <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.9/dist/js/bootstrap-select.min.js"></script>
+  <!-- Custom scripts for this template -->
+  <script src="js/resume.js"></script>
+
+</body>
+
+</html>
